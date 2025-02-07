@@ -14,8 +14,8 @@ export default function ApiDocContent({ index }) {
         {apiData.apis.map((item) => (
           <li key={item.id}>
             <>
-              <div className="api-type">
-                <p>{item.type}</p>
+              <div className="api-url">
+                <p className="api-type">{item.type}</p>
                 <p>{apiData.url}</p>
               </div>
               <p>
