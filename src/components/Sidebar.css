@@ -1,0 +1,17 @@
+.main-sidebar{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 12%;
+  background-color: black;
+  color: white;
+  padding: 4rem 0 0 2rem;
+}
+
+.main-sidebar button{
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+  width: 8rem;
+  border-style: none;
+  font-size: medium;
+}

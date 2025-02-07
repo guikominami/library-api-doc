@@ -1,0 +1,26 @@
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.api-type{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(223, 218, 218);
+  border-radius: 2px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.api-type p{
+  margin-right: 0.5rem;
+}
+
+.content li{
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.content h1{
+  margin-bottom: 0.5rem;
+}
