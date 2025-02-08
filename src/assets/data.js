@@ -1,29 +1,22 @@
+import headerBasic from "../assets/header_basic.jpg";
+import userPostBody from "../assets/user_post_body.jpg";
+import userResponse200PostHeader from "../assets/user_response_200_post_header.jpg";
+import userResponse200PostBody from "../assets/user_response_200_post_body.jpg";
+
 export const apiUsers = {
-  name: "Usuários",
+  name: "Register User",
   url: "https://library-07f2.onrender.com/api/users",
+  hasLink: false,
   apis: [
     {
       id: 1,
-      type: "GET",
-      description: "Retornar uma lista de usuários do sistema de biblioteca.",
-      security: "",
-      parameters: "",
-    },
-    {
-      id: 2,
-      url: "",
       type: "POST",
-      description: "Inserir um gênero na lista de usuários de livros.",
-      security: "x-token",
-      parameters: "name",
-    },
-    {
-      id: 3,
-      url: "",
-      type: "PUT",
-      description: "Alterar um gênero na lista de usuários de livros.",
-      security: "x-token",
-      parameters: "id, name",
+      description: "Register an user in the system.",
+      header: headerBasic,
+      body: userPostBody,
+      headerResponse: userResponse200PostHeader,
+      bodyResponse: userResponse200PostBody,
+      tips: "Copy the x-auth-token content to use in the header of the next requests."
     },
   ],
 };
@@ -113,8 +106,7 @@ export const apiAuthentication = {
   ],
 };
 
-export const apiBooks = 
-{
+export const apiBooks = {
   name: "Autenticação",
   url: "https://library-07f2.onrender.com/api/auth",
   apis: [
@@ -143,67 +135,70 @@ export const apiBooks =
       security: "x-token",
       parameters: "id, name",
     },
-  ]};
+  ],
+};
 
 export const apiCustomers = {
   name: "Clientes",
   url: "https://library-07f2.onrender.com/api/auth",
   apis: [
-  {
-    id: 1,
-    type: "GET",
-    name: "Clientes",
-    description: "Retornar uma lista de clientes.",
-    security: "",
-    parameters: "",
-  },
-  {
-    id: 2,
-    type: "POST",
-    name: "Clientes",
-    description: "Inserir um cliente na lista de clientes.",
-    security: "x-token",
-    parameters: "name",
-  },
-  {
-    id: 3,
-    type: "PUT",
-    name: "Clientes",
-    description: "Alterar um cliente na lista de clientes.",
-    security: "x-token",
-    parameters: "id, name",
-  },
-]};
+    {
+      id: 1,
+      type: "GET",
+      name: "Clientes",
+      description: "Retornar uma lista de clientes.",
+      security: "",
+      parameters: "",
+    },
+    {
+      id: 2,
+      type: "POST",
+      name: "Clientes",
+      description: "Inserir um cliente na lista de clientes.",
+      security: "x-token",
+      parameters: "name",
+    },
+    {
+      id: 3,
+      type: "PUT",
+      name: "Clientes",
+      description: "Alterar um cliente na lista de clientes.",
+      security: "x-token",
+      parameters: "id, name",
+    },
+  ],
+};
 
 export const apiRentals = {
   name: "Reservas",
   url: "https://library-07f2.onrender.com/api/auth",
   apis: [
-  {
-    id: 1,
-    type: "GET",
-    name: "Reservas",
-    description: "Lista de reservas.",
-    security: "",
-    parameters: "",
-  },
-  {
-    id: 2,
-    type: "POST",
-    name: "Reservas",
-    description: "Reservar um livro.",
-    security: "x-token",
-    parameters: "name",
-  },
-  {
-    id: 3,
-    type: "PUT",
-    name: "Reservas",
-    description: "Alterar uma reserva.",
-    security: "x-token",
-    parameters: "id, name",
-  },
-]};
+    {
+      id: 1,
+      type: "GET",
+      name: "Reservas",
+      description: "Lista de reservas.",
+      security: "",
+      parameters: "",
+    },
+    {
+      id: 2,
+      type: "POST",
+      name: "Reservas",
+      description: "Reservar um livro.",
+      security: "x-token",
+      parameters: "name",
+    },
+    {
+      id: 3,
+      type: "PUT",
+      name: "Reservas",
+      description: "Alterar uma reserva.",
+      security: "x-token",
+      parameters: "id, name",
+    },
+  ],
+};
 
 export const apiLinks = [
   {

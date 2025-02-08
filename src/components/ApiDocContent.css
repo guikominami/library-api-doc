@@ -11,9 +11,10 @@
   border-radius: 2px;
   padding: 0.2rem;
   margin-bottom: 1rem;
+  width: 45%;
 }
 
-.api-url p{
+.api-url span{
   margin-right: 1rem;
 }
 
@@ -25,10 +26,28 @@
 }
 
 .content h1{
+  font-weight: 700;
   margin-bottom: 1.5rem;  
+}
+
+.content p{
+  margin-bottom: 0.5rem;  
 }
 
 .content li{
   margin-bottom: 3rem;
   list-style: none;
+}
+
+.content img{
+  width: 70%;
+}
+
+.request-images{
+  display: flex;
+  flex-direction: row;
+}
+
+.request-images span{
+  width: 50%;
 }
