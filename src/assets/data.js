@@ -24,7 +24,7 @@ import rentalResponse200PostBody from "../assets/img/rental_response_200_post_bo
 export const apiUsers = {
   name: "Register User",
   type: "POST",
-  description: "Register an user in the system.",
+  description: "Register an user in the system. Only admin can perform PUT and DELETE actions.",
   url: "https://library-07f2.onrender.com/api/users",
   hasLink: false,
   header: headerBasic,
