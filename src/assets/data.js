@@ -68,6 +68,7 @@ export const apiPostGenre = {
   body: genrePostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: genreResponse200PostBody,
+  tips: "Use x-auth-token content from a valid user in the header request."
 };
 
 export const apiPutGenre = {
@@ -80,6 +81,7 @@ export const apiPutGenre = {
   body: genrePostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: genreResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."
 };
 
 export const apiDeleteGenre = {
@@ -92,6 +94,7 @@ export const apiDeleteGenre = {
   header: headerAuth,
   headerResponse: authResponse200PostHeader,
   bodyResponse: genreResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."
 };
 
 export const apiGetAuthors = {
@@ -115,6 +118,7 @@ export const apiPostAuthor = {
   body: authorPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: authorResponse200PostBody,
+  tips: "Use x-auth-token content from a valid user in the header request."  
 };
 
 export const apiPutAuthor = {
@@ -127,6 +131,7 @@ export const apiPutAuthor = {
   body: authorPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: authorResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."
 };
 
 export const apiDeleteAuthor = {
@@ -138,6 +143,7 @@ export const apiDeleteAuthor = {
   header: headerAuth,
   headerResponse: authResponse200PostHeader,
   bodyResponse: authorResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."  
 };
 
 export const apiGetBooks = {
@@ -161,6 +167,7 @@ export const apiPostBook = {
   body: bookPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: bookResponse200PostBody,
+  tips: "Use x-auth-token content from a valid user in the header request."  
 };
 
 export const apiPutBook = {
@@ -173,6 +180,7 @@ export const apiPutBook = {
   body: bookPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: bookResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."  
 };
 
 export const apiDeleteBook = {
@@ -184,6 +192,7 @@ export const apiDeleteBook = {
   header: headerAuth,
   headerResponse: authResponse200PostHeader,
   bodyResponse: bookResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."  
 };
 
 export const apiGetCustomers = {
@@ -207,6 +216,7 @@ export const apiPostCustomer = {
   body: customerPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: customerResponse200PostBody,
+  tips: "Use x-auth-token content from a valid user in the header request."  
 };
 
 export const apiPutCustomer = {
@@ -219,6 +229,7 @@ export const apiPutCustomer = {
   body: customerPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: customerResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."  
 };
 
 export const apiDeleteCustomer = {
@@ -230,6 +241,7 @@ export const apiDeleteCustomer = {
   header: headerAuth,
   headerResponse: authResponse200PostHeader,
   bodyResponse: customerResponse200PostBody,
+  tips: "Use x-auth-token content from a valid admin user in the header request."  
 };
 
 export const apiRentals = {
@@ -242,6 +254,7 @@ export const apiRentals = {
   body: rentalPostBody,
   headerResponse: authResponse200PostHeader,
   bodyResponse: rentalResponse200PostBody,
+  tips: "Use x-auth-token content from a valid user in the header request."  
 };
 
 export const apiLinks = [
@@ -269,11 +282,6 @@ export const apiLinks = [
     id: 4,
     name: "list genres",
     url: apiGetGenre,
-  },  
-  {
-    id: 5,
-    name: "book genre",
-    url: "",
   },  
   {
     id: 6,

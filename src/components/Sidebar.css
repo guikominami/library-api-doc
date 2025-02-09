@@ -1,13 +1,10 @@
 .main-sidebar{
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   width: 12%;
-  background-color: #ebeef5;
-  color: white;
+  background-color: #e4e7ef;
   padding-top: 2rem;
-  color: rgb(43, 42, 42);  
-  background-color: transparent;
 }
 
 .main-sidebar button{
@@ -23,7 +20,7 @@
   background-color: transparent;
 }
 
-.main-sidebar span{
+.main-sidebar p{
   text-transform: capitalize;
   padding: 0.4rem 0.4rem 0.1rem 1.5rem;
   margin-bottom: 0.2rem;
@@ -37,4 +34,31 @@
 
 .main-sidebar button:hover{
   background-color: #c3e1f7;
+}
+
+@media screen and (max-width: 950px) {
+  .main-sidebar{
+    width: 20%;
+  } 
+}
+
+
+@media screen and (max-width: 600px) {
+  .main-sidebar button{
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .main-sidebar p{
+    padding: 0.2rem;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+  }
+  
+  .main-sidebar span{
+    padding: 0;
+    margin: 0;
+    font-size: 0.5rem;
+  }
 }

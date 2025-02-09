@@ -6,23 +6,20 @@ export default function Sidebar({ onMenuClicked }) {
   return (
     <aside className="main-sidebar">
       {apiLinks.map((item, index) => (
-        <>
+        <span key={item.id}>
           {item.url === "" && (
-            <span
-              key={item.id}
-            >
+            <p>
               {item.name}
-            </span>
+            </p>
           )}        
           {item.url !== "" && (
             <button
-              key={item.id}
               onClick={() => onMenuClicked(index, item.name)}
             >
               {item.name}
             </button>
           )}
-        </>
+        </span>
       ))}
     </aside>
   );

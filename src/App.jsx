@@ -1,25 +1,36 @@
 import Sidebar from "./components/Sidebar";
 import ApiDocContent from "./components/ApiDocContent";
+import Overview from "./components/Overview";
+
 import { useState } from "react";
 
 import "./App.css";
 
 function App() {
-  const[apiDataIndex, setApiDataIndex] = useState(0)
+  const[apiDataIndex, setApiDataIndex] = useState()
+  let content = "";
   
-  console.log("atualizou")
-
   function handleMenuClicked(item){
-    console.log("clicou");
-    console.log(item);
     setApiDataIndex(item);
+    console.log(apiDataIndex);
+  }
+  
+  if (apiDataIndex !== undefined){
+    console.log("que pasa");
+    content = (
+      <ApiDocContent index={apiDataIndex}/>
+    )
+  }else{
+    content = (
+      <Overview />
+    )
   }
   
   return (
     <main className="main-area">
       <Sidebar onMenuClicked={handleMenuClicked}/>
       <section className="content-area">
-        <ApiDocContent index={apiDataIndex}/>
+        {content}
       </section>
     </main>
   );

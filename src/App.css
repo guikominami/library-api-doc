@@ -17,8 +17,16 @@
 }
 
 .content-area{
-  width: 70%;
+  width: 60%;
   margin-top: 2rem;
   margin-left: 4rem;
 }
 
+
+@media screen and (max-width: 600px) {
+  .content-area{
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+}
