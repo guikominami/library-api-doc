@@ -8,6 +8,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  base: "/library/",
+  base: "/libraryapi/",
   publicDir: "public",
 });

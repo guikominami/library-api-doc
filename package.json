@@ -1,8 +1,8 @@
 {
-  "name": "library",
-  "homepage": "https://mudalab.com.br/library-api/",
+  "name": "libraryapi",
+  "homepage": "https://mudalab.com.br/libraryapi/",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "library": "file:",
+    "libraryapi": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0"
