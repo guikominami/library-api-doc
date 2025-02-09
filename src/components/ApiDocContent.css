@@ -11,7 +11,11 @@
   border-radius: 2px;
   padding: 0.2rem;
   margin-bottom: 1rem;
-  width: 45%;
+  width: 50%;
+}
+
+.link-icon{
+  margin-top: 0.4rem;
 }
 
 .api-url span{
@@ -23,31 +27,40 @@
   color: white;
   border-radius: 2px;
   padding: 0.2rem;
+  font-weight: 400;
 }
 
 .content h1{
   font-weight: 700;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1rem;  
 }
 
-.content p{
-  margin-bottom: 0.5rem;  
+.content h2{
+  font-weight: 500;
+  margin-bottom: 1rem;  
+  font-size: medium;
 }
 
 .content li{
   margin-bottom: 3rem;
   list-style: none;
-}
-
-.content img{
-  width: 70%;
+  margin-bottom: 1rem;  
 }
 
 .request-images{
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;  
 }
 
-.request-images span{
+.request-images-child{
   width: 50%;
+}
+
+.request-images-child img{
+  width: 60%;
+}
+
+.api-description{
+  margin-bottom: 1.5rem;
 }

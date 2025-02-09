@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { BsLink45Deg } from "react-icons/bs";
-
-import "./ApiDocContent.css";
 import { apiLinks } from "../assets/data";
+import ApiImages from "./ApiImages";
+import "./ApiDocContent.css";
 
 export default function ApiDocContent({ index }) {
   console.log("apiDataId", index);
@@ -18,7 +18,7 @@ export default function ApiDocContent({ index }) {
             <>
               <div className="api-url">
                 <span className="api-type">{item.type}</span>
-                <span>{apiData.url}</span>
+                <span>{item.url}</span>
                 {item.hasLink && (
                   <span>
                     <a href={apiData.url} target="_blank">
@@ -27,31 +27,19 @@ export default function ApiDocContent({ index }) {
                   </span>
                 )}
               </div>
-              <p>{item.description}</p>
-              <h1>Request</h1>
-              <div className="request-images">
-                <span>
-                  <p>Header</p>
-                  <img src={item.header} alt="" />
-                </span>
-                <span>
-                  <p>Body</p>
-                  <img src={item.body} alt="" />
-                </span>
-              </div>
-
-              <h1>Response</h1>
-              <div className="request-images">
-                <span>
-                  <p>Header</p>
-                  <img src={item.headerResponse} alt="" />
-                </span>
-                <span>
-                  <p>Body</p>
-                  <img src={item.bodyResponse} alt="" />
-                </span>
-              </div>
-              <p>Tips: {item.tips}</p>
+              <p className="api-description">{item.description}</p>
+              <ApiImages
+                title={"Request"}
+                header={item.header}
+                body={item.body}
+                classnameImage={"imageRequest"}
+              />
+              <ApiImages
+                title={"Response"}
+                header={item.headerResponse}
+                body={item.bodyResponse}
+                classnameImage={"imageResponse"}
+              />
             </>
           </li>
         ))}
