@@ -11,39 +11,33 @@ export default function ApiDocContent({ index }) {
 
   return (
     <section className="content">
-      <ul>
+      <>
         <h1>{apiData.name}</h1>
-        {apiData.apis.map((item) => (
-          <li key={item.id}>
-            <>
-              <div className="api-url">
-                <span className="api-type">{item.type}</span>
-                <span>{item.url}</span>
-                {item.hasLink && (
-                  <span>
-                    <a href={apiData.url} target="_blank">
-                      <BsLink45Deg />
-                    </a>
-                  </span>
-                )}
-              </div>
-              <p className="api-description">{item.description}</p>
-              <ApiImages
-                title={"Request"}
-                header={item.header}
-                body={item.body}
-                classnameImage={"imageRequest"}
-              />
-              <ApiImages
-                title={"Response"}
-                header={item.headerResponse}
-                body={item.bodyResponse}
-                classnameImage={"imageResponse"}
-              />
-            </>
-          </li>
-        ))}
-      </ul>
+        <div className="api-url">
+          <span className="api-type">{apiData.type}</span>
+          <span>{apiData.url}</span>
+          {apiData.hasLink && (
+            <span>
+              <a href={apiData.url} target="_blank">
+                <BsLink45Deg />
+              </a>
+            </span>
+          )}
+        </div>
+        <p className="api-description">{apiData.description}</p>
+        <ApiImages
+          title={"Request"}
+          header={apiData.header}
+          body={apiData.body}
+          classnameImage={"imageRequest"}
+        />
+        <ApiImages
+          title={"Response"}
+          header={apiData.headerResponse}
+          body={apiData.bodyResponse}
+          classnameImage={"imageResponse"}
+        />
+      </>
     </section>
   );
 }

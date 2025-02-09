@@ -11,7 +11,7 @@
   border-radius: 2px;
   padding: 0.2rem;
   margin-bottom: 1rem;
-  width: 50%;
+  width: 55%;
 }
 
 .link-icon{
@@ -26,7 +26,7 @@
   background-color: rgb(21, 134, 21);
   color: white;
   border-radius: 2px;
-  padding: 0.2rem;
+  padding: 0.2rem 0.3rem;
   font-weight: 400;
 }
 
@@ -44,13 +44,13 @@
 .content li{
   margin-bottom: 3rem;
   list-style: none;
-  margin-bottom: 1rem;  
+  margin-bottom: 0.5rem;  
 }
 
 .request-images{
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;  
+  margin-bottom: 0.5rem;  
 }
 
 .request-images-child{
