@@ -1,5 +1,6 @@
 {
   "name": "library",
+  "homepage": "https://mudalab.com.br/library-api/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
